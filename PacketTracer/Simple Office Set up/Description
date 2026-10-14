@@ -1,0 +1,51 @@
+This Cisco packet tracer is supposed to simulate a small office set up.
+
+Scenario: A small business with three departments (Admin, Sales, Guest) sharing one internet connection.
+
+Topology:
+- 1 router (e.g., ISR 4331) connected to a simulated ISP
+- 2 Layer 2 switch (2960)
+- 2–3 PCs per VLAN, plus a server (DHCP or web)
+
+Client request: 
+
+From: Dana Reyes, Owner, Reyes Supply Co.
+To: Ethan Trombley, IT Contractor
+Subject: Network setup for the new office
+
+Hi Ethan,
+
+The cabling’s done and the equipment is in place, so here’s what we need from the network.
+
+Departments
+
+- Sales (3 computers) and Admin (2 computers) each need their own separate network. Admin handles payroll and customer financials, so I want it kept apart from everyone else.
+- The two departments still need to be able to reach each other when necessary.
+- Guests in the lobby need Wi-Fi. It has to be password-protected with modern encryption. Guests must not be able to reach any of our department computers or equipment, under any circumstances.
+
+Addresses
+
+- Nobody here is going to type in IP settings by hand. Every computer and guest device should get its address automatically.
+- Please give me a simple addressing plan I can keep on file.
+
+Security
+
+- Our last IT person left the equipment with no passwords. I want every device password-protected, and any stored passwords shouldn’t be readable in plain text.
+- Remote management of the equipment must be encrypted. Only Admin should be able to log in remotely. Sales and guests shouldn’t even be able to try.
+- Anyone logging in should see a warning that access is restricted.
+- If someone unplugs one of our office computers and plugs in their own laptop, that port should shut itself off.
+- Any network ports we’re not using should be disabled, so nobody can just plug in.
+
+Reliability: 
+
+- I paid for two cables between the switches. I’d like both of them doing work, not one sitting idle.
+
+Deliverables
+When you’re done, please send me:
+
+1. The addressing plan
+2. Proof that guests can’t reach our internal computers
+3. Proof that remote management works from Admin and is blocked from everywhere else
+
+Thanks,
+Dana
