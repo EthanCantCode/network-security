@@ -5,3 +5,9 @@ This set up is to help easily create a subnet.
 This will use the basic 192.168.x.x ip address string.
 
 '''
+
+ipAdd = 0
+
+amtOfHosts = 0
+amtOfSwitches = 0
+
